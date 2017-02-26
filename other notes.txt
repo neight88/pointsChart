@@ -1,0 +1,42 @@
+
+class category extends React.Component {
+    constructor(id, name, level) {
+        super(props);
+        this.id = id;
+        this.name = name;
+        this.level = level;
+    };
+};
+
+//array of categories you've added
+let items = [];
+//generates an unordered list of categories
+let categoriesList = function({items}) {
+    return (
+        <ul>
+            {items.map(item => <li key={item.id}>{item.name}</li>)}
+        </ul>
+    );
+};
+/*
+
+
+const totalPoints extends React.Component {
+    render() {
+        return (
+        <div class="col-sm-4 col-sm-offset-4">
+        <header>"Points Earned:"</header>
+        <span>"29"</span>
+        </div>
+    );
+    }
+}
+
+const element = (
+    <div class="col-sm-4 col-sm-offset-4">
+    <header>"Points Earned:"</header>
+);
+
+
+ReactDOM.render(<element />, document.getElementById('root'))
+*/

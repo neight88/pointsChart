@@ -1,0 +1,17 @@
+.application {
+    background: #333;
+    box-shadow: 0 4px 0px #666;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron {
+    color: black;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.behaviors-list {
+    text-align: left;
+}

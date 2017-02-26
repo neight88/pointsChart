@@ -1,0 +1,39 @@
+{
+  "name": "points-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "webpack-watch": "webpack -w",
+      "express-server": "node ./server",
+      "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+      "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neight88/pointsChart.git"
+  },
+  "author": "Nate Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neight88/pointsChart/issues"
+  },
+  "homepage": "https://github.com/neight88/pointsChart#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "express": "^4.14.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0"
+  }
+}
